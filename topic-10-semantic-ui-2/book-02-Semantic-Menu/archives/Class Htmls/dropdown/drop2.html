@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+    <title>Semantic UI Dropdown</title>
+    <style>
+     .ui.container {
+       margin-top:3%;
+      }
+
+      .ui.selection.dropdown .menu .item {
+        border-top: none;
+      }
+    </style>
+  </head>
+<body>
+
+<div class = "ui container">
+<div class="ui selection dropdown">
+  <input type="hidden" name="gender">
+  <i class="dropdown icon"></i>
+  <div class="default text">Gender</div>
+  <div class="menu">
+    <div class="item" data-value="0">Female</div>
+    <div class="item" data-value="1">Male</div>
+	<div class="item" data-value="2">Other</div>
+  </div>
+</div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+<script>
+ $('.ui.dropdown').dropdown();
+</script>
+
+</body>
+</html>
+

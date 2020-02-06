@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+    <title>Semantic UI Table</title>
+    <style>
+      .ui.container {
+         margin-top:3%;
+      }
+    </style>
+</head>
+<body>
+
+<div class = "ui container">
+	<table class= "ui celled sortable  table">
+		<thead>
+			<tr>
+				<th class="default-sort">Name</th>
+				<th class="number">Age</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Smith, Sam</td>
+				<td data-sort-value = 4>43</td>
+			</tr>
+			<tr>
+				<td>Ryan, Philip</td>
+				<td data-sort-value = 5>59</td>
+			</tr>
+			<tr>
+				<td>Walker, Jade</td>
+				<td data-sort-value = 3>33</td>
+			</tr>
+			<tr>
+				<td>Smith, Noel</td>
+				<td data-sort-value = 1>9</td>
+			</tr>
+			<tr>
+				<td>Flynn, Mel</td>
+				<td data-sort-value = 2>17</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+<script type="text/javascript" src="https://semantic-ui.com/javascript/library/tablesort.js"></script>
+<script>
+   $('table.sortable').tablesort().data('tablesort').sort($("th.default-sort"));
+</script>
+</body>
+</html>
+

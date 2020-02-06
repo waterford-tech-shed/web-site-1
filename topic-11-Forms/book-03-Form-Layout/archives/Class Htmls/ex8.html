@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Layout 8</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+    <style>
+     .ui.container {
+	   padding-top: 1em;
+     }
+    </style>
+</head>
+<body>
+<div class="ui container">
+
+<form action="" method = "get" class="ui form">
+  <div class="field">
+    <label for = "fname">First Name</label>
+    <input type="text" id = "fname" name="first-name" placeholder="First Name" autofocus>
+  </div>
+  <div class="field">
+    <label for = "lname">Last Name</label>
+    <input type="text" id = "lname" name="last-name" placeholder="Last Name">
+  </div>
+  <div class="field">
+    <div class="ui checkbox">
+      <input type="checkbox" id = "TandC"  name ="TandC">
+      <label for = "TandC">I agree to the Terms and Conditions</label>
+    </div>
+  </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>
+
+
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+</body>
+</html>
